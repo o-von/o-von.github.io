@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2087-kalay
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400');
 
 body {
-    background: #ffffff;
+  background: #191919;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -102,8 +102,8 @@ p {
 
 .section-btn:focus,
 .section-btn:hover {
-  background: #ffffff;
-  color: #000000;
+  background: #191919;
+  color: #f0f0f0;
 }
 
 
@@ -157,8 +157,21 @@ a:hover, a:active, a:focus {
 }
 
 #service, #work {
-  background: #f9f9f9;
+  background: #191919;
   text-align: center;
+}
+
+/* Make section titles readable on dark background */
+.section-title h2 {
+  color: #f0f0f0;
+}
+
+/* Make service card headings and paragraphs readable on dark background */
+.service-thumb h4 {
+  color: #f0f0f0;
+}
+.service-thumb p {
+  color: #d0d0d0;
 }
 
 
@@ -177,7 +190,7 @@ a:hover, a:active, a:focus {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  background: none repeat scroll 0 0 #ffffff;
+  background: none repeat scroll 0 0 #191919;
 }
 
 .spinner {
@@ -202,7 +215,7 @@ a:hover, a:active, a:focus {
   animation: spinner .9s linear infinite;
 }
 
-@-webkit-@keyframes spinner {
+@-webkit-keyframes spinner {
   to {transform: rotate(360deg);}
 }
 
@@ -217,7 +230,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 #home {
-  background: url('../images/home-bg.jpg') 50% 0 repeat-y fixed;
+  background: url('../images/home-bg-dark.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   display: -webkit-box;
@@ -240,7 +253,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 .service-thumb {
-  background: #ffffff;
+  background: #191919;
   border-radius: 5px;
   padding: 42px 22px;
   cursor: crosshair;
@@ -270,6 +283,44 @@ a:hover, a:active, a:focus {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 22px;
+}
+
+/* Discord logo hover: crossfade and translate to white variant */
+.discord-logo {
+  position: relative;
+  width: 60%;
+  margin: 0 auto 12px auto;
+  height: auto;
+}
+.discord-logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  will-change: opacity, transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+/* ensure the white image sits above the base image */
+.discord-logo .discord-base {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+.discord-logo .discord-white {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+  transform-origin: 50% 50%;
+}
+/* On hover: instantly swap to white version and upscale it (no smooth transition) */
+.service-thumb:hover .discord-logo .discord-white {
+  opacity: 1 !important;
+}
+.service-thumb:hover .discord-logo .discord-base {
+  opacity: 0 !important;
 }
 
 .bg-grey .fa {
@@ -327,7 +378,7 @@ a:hover, a:active, a:focus {
 
 .work-thumb-overlay {
   position: absolute;
-  background: #7682cc;
+  background: #505786;
   border-radius: 5px;
   cursor: crosshair;
   opacity: 0;
@@ -393,7 +444,7 @@ a:hover, a:active, a:focus {
 -----------------------------------------*/
 
 footer {
-  background: #7682cc;
+  background: #3d436d;
   text-align: center;
   padding: 120px 0;
 }
@@ -421,7 +472,7 @@ footer p {
 }
 
 .social-icon li a {
-  background: #ffffff;
+  background: #191919;
   border-radius: 100%;
   color: #454545;
   cursor: pointer;
