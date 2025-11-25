@@ -1,8 +1,0 @@
-.hover-pop {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hover-pop:hover {
-    transform: scale(1.2); /* Makes the flag 20% larger */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for a "pop-out" effect */
-}
