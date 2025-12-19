@@ -5,6 +5,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=Edge">
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
           <title>O-Von | Music</title>
+          <link rel="icon" type="image/icon" href="images/titlepicture.ico">
           <link rel="stylesheet" href="css/bootstrap.min.css">
           <link rel="stylesheet" href="css/all.min.css">
           <link rel="stylesheet" href="css/animate.css">
@@ -30,6 +31,14 @@
      <a href="musichu-dark.html" title="Válts nyelvet" style="position: fixed; top: 10px; left: 10px; z-index: 1000;">
           <img src="images/hungarianflag.png" alt="Válts nyelvet" class="hover-pop" style="width: 30px; height: 20px; border: 2px solid black; border-radius: 5px;">
      </a>
+
+          <!-- Dropdown navigation: Musics / Albums / Feats -->
+     <select id="music-nav" onchange="if(this.value) window.location.href=this.value;" title="Navigate" style="position: fixed; top: 50px; left: 10px; z-index: 1000; padding: 8px 12px; border-radius: 6px; background: #222; color: #fff; border: none; font-weight: bold;">
+          <option value="">Navigate</option>
+          <option value="musics-dark.html">Musics</option>
+          <option value="albums-dark.html">Albums</option>
+          <option value="feats-dark.html">Feats</option>
+     </select>
 
 <!-- PRE LOADER -->
 <div class="preloader">

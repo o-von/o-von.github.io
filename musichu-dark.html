@@ -5,6 +5,7 @@
           <meta http-equiv="X-UA-Compatible" content="IE=Edge">
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
           <title>O-Von | Zene</title>
+          <link rel="icon" type="image/icon" href="images/titlepicture.ico">
           <link rel="stylesheet" href="css/bootstrap.min.css">
           <link rel="stylesheet" href="css/all.min.css">
           <link rel="stylesheet" href="css/animate.css">
@@ -30,6 +31,14 @@
      <a href="music-dark.html" title="Change Language" style="position: fixed; top: 10px; left: 10px; z-index: 1000;">
           <img src="images/flagofuk.png" alt="Change Language" class="hover-pop" style="width: 30px; height: 20px; border: 2px solid black; border-radius: 5px;">
       </a>
+
+           <!-- Dropdown navigation: Musics / Albums / Feats -->
+     <select id="music-nav" onchange="if(this.value) window.location.href=this.value;" title="Navigate" style="position: fixed; top: 50px; left: 10px; z-index: 1000; padding: 8px 12px; border-radius: 6px; background: #222; color: #fff; border: none; font-weight: bold;">
+          <option value="">Navigálás</option>
+          <option value="musicshu-dark.html">Zenék</option>
+          <option value="albumshu-dark.html">Albumok</option>
+          <option value="featshu-dark.html">Featek</option>
+     </select>
 
 <!-- PRE LOADER -->
 <div class="preloader">
