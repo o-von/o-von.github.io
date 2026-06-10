@@ -1,8 +1,0 @@
-/* Smooth pop (scale) animation for home button, no rotation */
-.smooth-pop-home {
-  transition: transform 0.22s cubic-bezier(.4,2,.6,1), box-shadow 0.22s;
-}
-.smooth-pop-home:hover {
-  transform: scale(1.13);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
-}
